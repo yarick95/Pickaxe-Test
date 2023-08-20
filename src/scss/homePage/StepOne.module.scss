@@ -1,0 +1,61 @@
+.step {
+  margin-bottom: 40px;
+
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+
+  .step_wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    img {
+      margin-top: 8px;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      max-width: 495px;
+      height: 70px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      resize: none;
+    }
+
+    button {
+      width: 180px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #061b2b;
+      color: #ffffff;
+      cursor: pointer;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.move_step .step {
+  transform: translateY(-200px);
+}
+
+.btn_disabled {
+  opacity: 0.7;
+}

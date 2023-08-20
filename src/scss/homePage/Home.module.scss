@@ -1,0 +1,44 @@
+.home {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background_half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f5f5f5;
+
+  z-index: -1;
+}
+
+.home_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  gap: 140px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1;
+  }
+}
+
+.step_wrapper {
+  width: 100%;
+  position: relative;
+  top: 200px;
+}

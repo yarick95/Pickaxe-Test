@@ -1,0 +1,22 @@
+.home_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+
+  img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .title {
+    max-width: 360px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
